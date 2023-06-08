@@ -1,0 +1,115 @@
+<!--<div class="topnav">-->
+<!--  <h5 class="h5 my-0 me-md-auto fw-normal text-white">-->
+<!--       <app-header></app-header>-->
+<!--  </h5>-->
+<!--&lt;!&ndash;     <img src="/Users/pankhuri/Desktop/EatEz_SaaS/Angular/logo5.png" style="margin:auto; width:53px; "  />&ndash;&gt;-->
+<!--  <a class ="text-align: center color: black"href="#header">EatEZ.. Eat with Ease</a>-->
+<!--  <div class="topnav-right">-->
+<!--       &lt;!&ndash; <a class="active" href="#home">Home</a>-->
+<!--       <a href="#team">Restaurant & Cafeteria</a>-->
+<!--       <a href="#about">About</a> &ndash;&gt;-->
+<!--       <ul class="nav navbar-nav navbar-right">-->
+<!--            <li><a href="#">Contact Us: <i class="fa fa-phone"></i> 010 020 0340</a></li>-->
+<!--            <li><a href="/auth/logout">Log Out</a></li>-->
+<!--       </ul>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<header>-->
+<!--</header>-->
+<!--<section>-->
+<!--  <div class="content-area">-->
+<!--    <div class="wrapper">-->
+<!--      <h2>REDHAWKS CAFETERIA</h2>-->
+<!--      <p>Seattle University, Seattle, WA 98109</p>-->
+<!--      <p> Ph:+1-9807363543</p>-->
+<!--      <div class="title">-->
+<!--        <h4>Menu</h4>-->
+<!--    </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <mw-menu-item-->
+<!--    *ngFor="let menuItem of menuItems"-->
+<!--    [menuItem]="menuItem"-->
+<!--    (delete)="onMenuItemDelete($event)"></mw-menu-item>-->
+<!--</section>-->
+<!--<footer>-->
+<!--  <a routerLink="/addMenuItem/1" >-->
+<!--  <button class="button button1">Add Item</button>-->
+<!--  </a>-->
+<!--</footer>-->
+
+<div>
+  <div class="topnav">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#" style="font-weight:bold">EatEZ.. Eat with Ease <h6>For Merchants</h6></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><h5>About</h5></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><h5>Contact Us</h5></a>
+          </li>
+          <li class="nav-item">
+            <a href="/auth/logout"><h5>Log Out</h5></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+</div>
+<div>
+  <br>
+  <main class="container">
+
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">
+              <img [src]="restaurant.restaurantImageUrl" width="500" height="200">
+            </strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">
+              <h2>{{ restaurant.restaurantName }}</h2>
+              <p>{{name}}</p>
+              <p>{{email}}</p>
+              <p>{{ restaurant.restaurantAddress }}</p>
+              <p> Ph:{{ restaurant.phoneNumber }}</p>
+            </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+ <h1>  Menu </h1>
+  <br>
+  <div>
+  <mw-menu-item
+    *ngFor="let menuItem of menuItems"
+    [menuItem]="menuItem"
+    (delete)="onMenuItemDelete($event)"></mw-menu-item>
+  </div>
+  <br>
+  <div class="btn-container">
+    <div class="center">
+  <a routerLink="/addMenuItem/{{restaurant._id}}" >
+    <button class="button button1">Add Item</button>
+  </a>
+    </div>
+  </div>
+</div>
+

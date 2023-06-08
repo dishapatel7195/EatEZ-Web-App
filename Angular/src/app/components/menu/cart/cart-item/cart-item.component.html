@@ -1,0 +1,6 @@
+<div class="cart-item">
+    <span>{{ cartItem.itemName }}</span> x
+    <span>{{ cartItem.qty }}</span>:
+    <strong>{{ (cartItem.qty * cartItem.itemPrice) | currency }}</strong>
+    <img class="col-md-4 offset-md-8" class="resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPB13n5R_YhzyP8XwPJev0zptso7U_VLsefg&usqp=CAU" align = "right" width="20" height="5%" (click)="deleteCartItem(cartItem)"> 
+  </div>

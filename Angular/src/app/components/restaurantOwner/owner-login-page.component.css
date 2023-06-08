@@ -1,0 +1,16 @@
+.owner-login-page img
+{
+  width: 100%;
+  height: 500px;
+  object-position: center;
+  object-fit: cover;
+}
+.owner-login-page-content{
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+
+}
+
+

@@ -1,0 +1,38 @@
+<app-nav></app-nav>
+<br>
+<h4>Hi there, your order has been placed successfully!</h4>
+
+
+<main class="container">
+
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">
+              <img [src]="restaurant.restaurantImageUrl" width="300" height="200">
+            </strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">
+              <h2>{{ restaurant.restaurantName }}</h2>
+              <p>{{ restaurant.restaurantAddress }}</p>
+              <p> {{ restaurant.phoneNumber }}</p>
+            </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<div>
+    <p> The order details have been sent to the email at <strong>{{ emailId }} </strong></p>
+    <p> Your order will be delivered at :</p>
+    <p> Bannan Engineering Building, Room 403 at 12:30pm</p>
+    <p> Enjoy the food!</p>
+</div>

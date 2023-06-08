@@ -1,0 +1,8 @@
+<app-nav></app-nav>
+<div class="cart-item">
+    <span>{{ cartItem.productName }}</span> x
+    <span>{{ cartItem.qty }}</span>:
+    <strong>{{ (cartItem.qty * cartItem.price) | currency:'INR' }}</strong>
+  </div>
+
+  

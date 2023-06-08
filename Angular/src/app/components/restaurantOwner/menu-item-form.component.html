@@ -1,0 +1,31 @@
+<header>
+  <h2>Add Menu Item</h2>
+</header>
+<div class ="addMenu">
+<form
+  [formGroup]="form"
+  (ngSubmit)="onSubmit(form.value)">
+  <ul>
+    <li>
+      <label for="itemName">Item name</label>
+      <input type="text" name="itemName" id="itemName" formControlName="itemName">
+    </li>
+    <li>
+      <label for="itemDescription">Item description</label>
+      <input type="text" name="itemDescription" id="itemDescription" formControlName="itemDescription">
+    </li>
+
+    <li>
+      <label for="itemPrice">Item price</label>
+      <input type="text" name="itemPrice" id="itemPrice" formControlName="itemPrice">
+    </li>
+
+    <li>
+      <label for="menuItemImageUrl">Item Image URL</label>
+      <input type="text" name="menuItemImageUrl" id="menuItemImageUrl" formControlName="menuItemImageUrl">
+    </li>
+  </ul>
+  <button type="submit">Save</button>
+  <!-- <button type="submit" [disabled]="!form.valid">Save</button> -->
+</form>
+</div>

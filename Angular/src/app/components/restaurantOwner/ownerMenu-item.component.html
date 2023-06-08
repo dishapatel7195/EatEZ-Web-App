@@ -1,0 +1,31 @@
+<!-- <h2>{{ menuItem.itemName }}</h2>
+<div>{{ menuItem.itemDescription }}</div>
+<div>{{ menuItem.itemPrice }}</div> -->
+
+
+
+<div class="menu">
+  
+
+  
+  <div class="single-menu ">
+    
+    <!-- <img src="{{ menuItem.itemName }}" alt=""> -->
+
+    <img [src]="menuItem.menuItemImageUrl">
+    
+    <div class="menu-content">
+        <h4>{{ menuItem.itemName }} <span>${{ menuItem.itemPrice }}</span></h4>
+        <p>{{ menuItem.itemDescription }}</p>
+    </div>
+    <a class="delete" (click)="onDelete()">
+      remove
+    </a>
+  </div>
+
+  <!-- <div class="tools"> -->
+    <!-- <a class="delete" (click)="onDelete()">
+      remove
+    </a> -->
+  </div>
+  <!-- </div> -->

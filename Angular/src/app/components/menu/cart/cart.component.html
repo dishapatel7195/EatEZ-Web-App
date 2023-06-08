@@ -1,0 +1,24 @@
+<div *ngIf="cartItems.length === 0" class="alert alert-info">Your Cart is Empty.</div>
+
+
+<ul *ngIf="cartItems.length > 0" class="list-group">
+<div class="hower" align="right">
+  <button type="button" align="right" style="color:red" (click)="onCartAllItemDelete()"><u>Clear cart</u></button>
+  <!-- <img class="resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPB13n5R_YhzyP8XwPJev0zptso7U_VLsefg&usqp=CAU"  width="20" height="5%"> -->
+</div>
+
+  <li class="list-group-item" *ngFor="let item of cartItems">
+    <app-cart-item [cartItem]="item"></app-cart-item>
+  </li>
+
+  <li class="list-group-item active">
+    <strong>Total</strong> {{ cartTotal | currency }}
+  </li>
+
+  <br>
+  
+  <br>
+  <button class="btn btn-primary btn-block" [routerLink]="['/order-details']" >Checkout</button>
+</ul>
+
+ 

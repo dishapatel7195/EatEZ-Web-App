@@ -1,0 +1,65 @@
+[{
+    "id": 1,
+    "name": "'Pancakes'",
+    "description": "'seattle'",
+    "price": 8.47,
+    "imageUrl": "https://bakingamoment.com/wp-content/uploads/2020/10/IMG_9322-chocolate-chip-pancakes.jpg"
+
+},
+{
+    "id": 2,
+    "name": "'waffles'",
+    "description": "'seattle'",
+    "price": 7.99,
+    "imageUrl": "https://www.cookedbyjulie.com/wp-content/uploads/2020/03/blueberry-waffles-one-500x500.jpg"
+
+},
+{
+    "id": 3,
+    "name": "'Classic Omelette'",
+    "description": "'seattle'",
+    "price": 9.99,
+    "imageUrl": "https://www.glutenfreestories.com/wp-content/uploads/2020/12/20201208-IMG_3959-500x500.jpg"
+
+},
+{
+    "id": 4,
+    "name": "'Hash Browns'",
+    "description": "'seattle'",
+    "price": 5.99,
+    "imageUrl": "https://i5.walmartimages.com/asr/319b5b23-8b3b-43f9-b80f-82315edf351b_1.fc992fad516f6b3003950ceabdcd2ecb.jpeg'"
+
+},
+{
+    "id": 5,
+    "name": "'Scrambled Eggs'",
+    "description": "'seattle'",
+    "price": 6.99,
+    "imageUrl": "https://www.theworktop.com/wp-content/uploads/2019/03/Scrambled-Eggs-Cream-Cheese-low-carb-breakfast-500x500.jpg"
+
+},
+{
+    "id": 6,
+    "name": "'Breakfast Tacos'",
+    "description": "'seattle'",
+    "price": 12.97,
+    "imageUrl": "https://www.lemonblossoms.com/wp-content/uploads/2019/06/Breakfast-Tacos-S5-500x500.jpg"
+
+},
+{
+    "id": 7,
+    "name": "'Brewed Coffee'",
+    "description": "'seattle'",
+    "price": 6.99,
+    "imageUrl": "https://www.willowcrestlane.com/wp-content/uploads/2020/04/Maple-Cinnamon-Latte-5-500x500.jpg"
+
+},
+{
+    "id": 8,
+    "name": "'Matcha Latte'",
+    "description": "'seattle'",
+    "price": 7.99,
+    "imageUrl": "https://gimmedelicious.com/wp-content/uploads/2018/03/Iced-Matcha-Latte2-500x500.jpg"
+
+}
+]

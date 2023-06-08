@@ -1,0 +1,60 @@
+<br>
+<br>
+<h3>EatEz....Eat with ease</h3>
+<br>
+<br>
+
+<div class="container">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <div id="google-map">
+            <img src="https://assets.bonappetit.com/photos/5d39c7cde82b9d0008a5353d/1:1/w_400%2Cc_limit/HLY-Nam-Prik-Horizontal.jpg" width="540" height="460">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="guest-form-card card" style="width: 35rem;">
+
+          <div class="card-header text-center">
+            <h1>Sign In</h1>
+
+          <div class="card-body" >
+            <form #loginForm="ngForm" (ngSubmit)="login()">
+              <div class="form-group">
+                <label>Sign-In As:</label>
+              <select name="role_dd" class="form-control" id="role_dd">
+                <option value="Student/Employee" id="se">Student/Employee</option>
+                <option value="Partner" id="pa">Partner</option>
+                <option value="Delivery Person" id="dp">Delivery Person</option>
+              </select>
+              </div>
+
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input id="username" class="form-control" [ngClass]="{ 'is-invalid': username.touched && username.invalid }" name="username" #username="ngModel" [(ngModel)]="model.username" required />
+                <span class="invalid-feedback">Username can't be blank.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control" [ngClass]="{ 'is-invalid': password.touched && password.invalid }" #password="ngModel" [(ngModel)]="model.password" required />
+                <span class="invalid-feedback">Password can't be blank.</span>
+              </div>
+
+              <div class="form-group">
+                <input type="checkbox" id="remember" name="remember" #remember="ngModel" [(ngModel)]="model.remember">
+                <label class="ml-1" for="remember">Remember Me</label>
+              </div>
+
+              <button class="btn btn-primary btn-block" [disabled]="loginForm.invalid" [routerLink]="['/restaurant']">Login</button>
+            </form>
+          </div>
+          </div>
+        </div>
+  </div>
+</div>
+</div>

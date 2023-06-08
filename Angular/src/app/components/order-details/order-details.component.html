@@ -1,0 +1,37 @@
+<app-nav></app-nav>
+
+<div class="row">
+
+<div class="col-md-2" *ngFor="let item of cartItems">
+  <div class="card mb-2 shadow-sm">
+    <img class="bd-placeholder-img card-img-top p-2" width="150" height="150" [src]="item.itemImageUrl" />
+    <div class="card-body">
+  
+      <p class="card-text">
+        <strong>{{ item.itemPrice | currency}} *  {{ item.qty}}</strong>
+      </p>
+      <h5 class="card-text">{{item.itemName}}</h5>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col offset-md-4">
+  <div class="card mb-2 shadow-sm card-body">
+  <label><strong>Choose a delivery location:</strong></label>
+<select address="role_dd" class="form-control" id="role_dd">
+  <option value="Address 1" id="1">Lemieux Library and McGoldrick Learning Commons. Second Floor Room 204</option>
+  <option value="Address 2" id="2">Bannan Engineering Building, Room 403</option>
+  <option value="Address 3" id="3">Pigott Building, third floor 304</option>
+</select>
+</div>
+</div>
+
+</div>
+
+<button class="btn col-md-4 offset-md-4 btn-primary btn-block" [routerLink]="['/confirmation', singleItem]">Make Payment</button>
+
+
